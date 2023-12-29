@@ -76,7 +76,7 @@ const ListTasks = () => {
         className={dark ? 'dark text-foreground bg-background' : ''}
         isOpen={isOpen}
         onOpenChange={onOpenChange}
-        placement="auto"
+        placement="top"
       >
         <ModalContent>
           {(onClose) => (
