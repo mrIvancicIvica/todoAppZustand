@@ -39,9 +39,9 @@ const ListTasks = () => {
   };
 
   return (
-    <div className="h-dvh">
+    <div className="h-dvh sm:w-[32rem]">
       {filteredTodos.map((task) => (
-        <Card key={task.id} className="max-w-[640px] m-3">
+        <Card key={task.id} className="m-3">
           <CardHeader
             onClick={() => toggleTodo(task.id)}
             className="justify-between"
