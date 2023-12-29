@@ -3,7 +3,7 @@ import { create } from 'zustand';
 const useTodoStore = create((set) => ({
   todos: [
     { id: 1, task: 'Buy groceries', completed: false },
-    { id: 2, task: 'Finish coding assignment', completed: false },
+    { id: 2, task: 'Finish coding', completed: false },
     { id: 3, task: 'Read a book', completed: false },
     { id: 4, task: 'Go for a run', completed: false },
     { id: 5, task: 'Call a friend', completed: false },
