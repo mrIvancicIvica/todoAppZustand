@@ -73,7 +73,7 @@ const ListTasks = () => {
         </Card>
       ))}
       <Modal
-        className={dark ? 'dark text-foreground bg-background' : ''}
+        className={dark ? 'dark text-foreground bg-background sm:w-[32rem]' : 'sm:w-[32rem]'}
         isOpen={isOpen}
         onOpenChange={onOpenChange}
         placement="top"
