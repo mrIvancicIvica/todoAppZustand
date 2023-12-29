@@ -72,7 +72,12 @@ const ListTasks = () => {
           </CardHeader>
         </Card>
       ))}
-      <Modal isOpen={isOpen} onOpenChange={onOpenChange} placement="top-center">
+      <Modal
+        className={dark ? 'dark text-foreground bg-background' : ''}
+        isOpen={isOpen}
+        onOpenChange={onOpenChange}
+        placement="auto"
+      >
         <ModalContent>
           {(onClose) => (
             <>
