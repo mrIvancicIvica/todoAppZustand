@@ -41,7 +41,7 @@ const ListTasks = () => {
   return (
     <div className="h-dvh">
       {filteredTodos.map((task) => (
-        <Card key={task.id} className="min-w-[640px] m-3">
+        <Card key={task.id} className="max-w-[640px] m-3">
           <CardHeader
             onClick={() => toggleTodo(task.id)}
             className="justify-between"
@@ -53,15 +53,6 @@ const ListTasks = () => {
             >
               {task.task}
             </Checkbox>
-            {/* <div
-              className={
-                task.completed
-                  ? 'flex items-center line-through cursor-pointer'
-                  : 'flex no-underline cursor-pointer'
-              }
-            >
-              {task.task}
-            </div> */}
             <div>
               <Button
                 isIconOnly
